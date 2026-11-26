@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+void modificararreglo(int *arreglo, int dimension){
+	for(int i=0;i<dimension;i++){
+		arreglo[i]*=2;
+	}
+}
+
+int main() {
+	int numeros[]={1,2,3,4,5,6};
+	int dimension=5;
+	modificararreglo(numeros,dimension);
+	
+	for(int i=0; i<dimension;i++){
+		printf("el elemento: [%d] contiene %d\n", i + 1, numeros[i]);
+	}
+  
+	return 0;
+}
